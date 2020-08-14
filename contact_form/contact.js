@@ -1,6 +1,7 @@
+
 jQuery(document).ready(function($) {
     "use strict";
-  
+
     //Contact
     $('form.contactForm').submit(function() {
       var f = $(this).find('.form-group'),
@@ -11,7 +12,6 @@ jQuery(document).ready(function($) {
   
         var i = $(this); // current input
         var rule = i.attr('data-rule');
-  
         if (rule !== undefined) {
           var ierror = false; // error flag for current input
           var pos = rule.indexOf(':', 0);
@@ -91,7 +91,9 @@ jQuery(document).ready(function($) {
       if (ferror) return false;
       else var str = $(this).serialize();
       var $form = $('form#test-form'),
-      url = 'https://script.google.com/macros/s/AKfycbxMruzRqrEbjv6YOtJ1gNqKcDqtnkN2o2JP_cxdpyOIIh5pFVNH/exec'
+      
+      url = 'https://script.google.com/macros/s/AKfycbz-a6trznEIrc6rfm_b1fmjfufIWYAB18WoNW5fLVqFb_pK8ysj/exec'
+      
       var jqxhr = $.ajax({
         url: url,
         method: "GET",
@@ -101,12 +103,10 @@ jQuery(document).ready(function($) {
         messageSent()
       );
       return false;
-    });
-  
+    });  
     function messageSent() {
-      $("#sendmessage").addClass("show");
-      $("#errormessage").removeClass("show");
       $('.contactForm').find("input, textarea").val("");
+      $('.submit-fomr').val('Submit');
   }
   
   });
