@@ -90,18 +90,20 @@ jQuery(document).ready(function($) {
       });
       if (ferror) return false;
       else var str = $(this).serialize();
+      console.log(str);
+      console.log($(this));
       var $form = $('form#test-form'),
-      
       url = 'https://script.google.com/macros/s/AKfycbz-a6trznEIrc6rfm_b1fmjfufIWYAB18WoNW5fLVqFb_pK8ysj/exec'
-      
       var jqxhr = $.ajax({
         url: url,
         method: "GET",
         dataType: "json",
         data: $form.serializeObject()
       }).success(
-        messageSent()
       );
+      console.log(jqxhr);
+      console.log($form.serializeObject());
+
       return false;
     });  
     function messageSent() {
