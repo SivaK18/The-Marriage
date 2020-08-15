@@ -1,0 +1,15 @@
+
+
+.embed {
+  position:fixed;
+  /*border-top: 4px solid #ff0000;*/
+
+  left:12%;
+  top:12%;
+  width:75%;
+  height:75%;
+  right:auto;
+  box-sizing:border-box;
+
+  background: #000000;
+}
