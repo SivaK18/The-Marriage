@@ -99,16 +99,22 @@ jQuery(document).ready(function($) {
         method: "GET",
         dataType: "json",
         data: $form.serializeObject()
-      }).success(
+      }).success( //messageSent()
       );
       console.log(jqxhr);
       console.log($form.serializeObject());
-
+      //window.open('./post_form.html','_blank');
+      //window.location.replace("./post_form.html");
+      setTimeout(function() {
+        window.location.href = "./post_form.html";
+      }, 1000);
       return false;
-    });  
+    });
+
     function messageSent() {
-      $('.contactForm').find("input, textarea").val("");
-      $('.submit-fomr').val('Submit');
+      window.location.href = "./post_form.html";
+      return false;
+      
   }
   
   });
