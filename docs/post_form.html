@@ -26,6 +26,20 @@
     .Enigma .container .copyright i{
         color: #FF0000 !important;
     }
+    .card-body .row{
+      margin: auto !important;
+    }
+    .pad {
+      padding: 0% !important;
+    }
+  /* .btn-success {
+      color: #fff !important;
+      background-color: #47a44b !important;
+      border-color: #39843c !important;
+    }
+    .btn-success:hover {
+    box-shadow: 0 14px 26px -12px rgba(76, 175, 80, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(76, 175, 80, 0.2) !important;
+}*/
 
 </style>
   <meta charset="utf-8" />
@@ -40,6 +54,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./css/material-kit.css?v=2.2.0" rel="stylesheet" />
+  <link href="./js/demo/demo.css" rel="stylesheet" />
+  <link href="./js/demo/vertical-nav.css" rel="stylesheet" />
 </head>
 
 <body class="login-page sidebar-collapse">
@@ -78,67 +94,59 @@
               </div>
             </div>
           </nav>
-
+          <div class="space-50"> </div>
   <div class="page-header " style="background-color: #fff;">
-     <div class="container" > 
+    <div class="container" >
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
-            <form  method = "GET"  name="contactForm" class="contactForm" id="test-form">
+        <div class="col-lg-8 col-md-12 col-sm-16 ml-auto mr-auto">
             <div class="card card-login card-hidden">
               <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Wish US</h4>
+                <h4 class="card-title">Thank you for wishing us</h4>
               </div>
-              <div class="card-body ">
+              <div class="card-body ml-auto mr-auto pad">
+              
+              
+              <div class="row mr-auto ml-auto">
                 <!-- <p class="card-description text-center"> Fill </p> -->
-                
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">face</i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="First Name.." name="Name" id="Name" />
-                  </div>
-                </span>
-                <span class="bmd-form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">message</i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Wish For NK.." name="Wish_for_NK" id="Wish_for_NK"/>
-                  </div>
-                </span>
-                <span class="bmd-form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">message</i>
-                      </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Wish For Jani.." name="Wish_for_Jani" id="Wish_for_Jani" />
-                  </div>
-                </span>
+                    <a href="form.html">
+                    <button class="btn btn-success btn-sm float-left "  > 
+                       Wish Us Again 
+                       <div class= "ripple-container"> </div> 
+                    </button>
+                  </a>
+                  &nbsp;&nbsp;&nbsp;&nbsp; 
+                <!--</div> -->
+                 <!-- <div class="col-md-6 col-lg-4 col-sm-8 ml-auto mr-auto "> -->
+                  <!--<div class="float-right"> -->
+                   <a href="index.html">
+                    <button class="btn btn-primary btn-sm float-right "  > 
+                      Watch Our Story 
+                      <div class= "ripple-container"> </div>
+                    </button>
+                   </a>
+              
               </div>
+                   <!-- </div>
+                </div> -->
+
+              </div>
+              <div class="space-20"> </div>
               <div class="card-footer justify-content-center">
-                <input onclick="window.location.href = 'post_form.html';" type="submit" value="Make Your Wish" id='submit-form' class="btn btn-rose btn-link btn-lg" />
               </div>
             </div>
-          </form>
+            </div>
         </div>
       </div>
-    </div>
+  </div>
     <footer class="footer Enigma">
         <div class="container">
           <div class="copyright float-right">
             &copy;
-             made with <i class="material-icons">favorite</i> by
-            <a href="https://teamenigma.netlify.app/" target="_blank">Team Enigma</a> for a better web.
+             2020 made with <i class="material-icons">favorite</i> by
+            <a href="https://teamenigma.netlify.app/" target="_blank">Team Enigma</a>.
           </div>
          </div>
-      </footer> 
-   </div>
+      </footer>
   <!--   Core JS Files   -->
   <script src="./js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./js/core/popper.min.js" type="text/javascript"></script>
@@ -159,6 +167,13 @@
   <!-- Plugins for presentation and navigation  -->
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./js/demo/modernizr.js" type="text/javascript"></script>
+  <script src="./js/demo/vertical-nav.js" type="text/javascript"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Js With initialisations For Demo Purpose, Don't Include it in Your Project -->
+  <script src="./js/demo/demo.js" type="text/javascript"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="./js/material-kit.js?v=2.2.0" type="text/javascript"></script>
 </body>
