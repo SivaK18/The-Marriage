@@ -17,16 +17,27 @@
 
 <head>
 <style>
-    .Enigma .container .copyright a{
+  .Enigma .container .copyright a{
         color: #000000 !important;
     }
     .Enigma .container .copyright {
         color: #000000 !important;
     }
+    .Enigma {
+      position: fixed;
+Width: 100%;
+bottom: 0;
+    }
     .Enigma .container .copyright i{
         color: #FF0000 !important;
     }
-
+    .form-pos{
+    margin-bottom: 23vh !important;
+    margin-top: 23vh !important;
+    }
+    .head {
+      min-height: 90vh !important;
+    }
 </style>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
@@ -81,12 +92,12 @@
             </div>
           </nav>
 
-  <div class="page-header " style="background-image: url('./img/form.jpg');">
+  <div class="page-header head" style="background-image: url('./img/form.jpg');">
      <div class="container" > 
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
             <form  method = "GET"  name="contactForm" class="contactForm" id="test-form" >
-            <div class="card card-login card-hidden">
+            <div class="card card-login card-hidden form-pos">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Wish US</h4>
               </div>
@@ -141,6 +152,15 @@
             <a href="teamenigma.netlify.app" target="_blank">Team Enigma</a>.
           </div>
         </div>
+      </footer>-->
+      <footer class="footer Enigma">
+        <div class="container">
+          <div class="copyright">
+            &copy;
+             2020 made with <i class="material-icons">favorite</i> by
+            <a href="https://teamenigma.netlify.app/" target="_blank">Team Enigma</a>.
+          </div>
+         </div>
       </footer>
 </div>
   <!--   Core JS Files   -->

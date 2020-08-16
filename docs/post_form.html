@@ -17,20 +17,28 @@
 
 <head>
 <style>
-    .Enigma .container .copyright a{
+  .Enigma .container .copyright a{
         color: #000000 !important;
     }
     .Enigma .container .copyright {
         color: #000000 !important;
     }
+    .Enigma {
+      position: fixed;
+Width: 100%;
+bottom: 0;
+    }
     .Enigma .container .copyright i{
         color: #FF0000 !important;
     }
-    .card-body .row{
-      margin: auto !important;
-    }
     .pad {
       padding: 0% !important;
+    }
+    .form-pos{
+    margin-top: 23vh !important;
+    }
+    .head {
+      min-height: 90vh !important;
     }
   /* .btn-success {
       color: #fff !important;
@@ -60,7 +68,7 @@
 
 <body class="login-page sidebar-collapse">
     <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-primary   fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-            <div class="container">
+            <div class="container ">
               <div class="navbar-translate">
                 <a class="navbar-brand" href="index.html">the-wedding</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,11 +103,11 @@
             </div>
           </nav>
           <div class="space-50"> </div>
-  <div class="page-header " style="background-image: url('./img/form.jpg');">
+  <div class="page-header head" style="background-image: url('./img/form.jpg');">
     <div class="container" >
       <div class="row">
-        <div class="col-lg-8 col-md-12 col-sm-16 ml-auto mr-auto">
-            <div class="card card-login card-hidden">
+        <div class="col-lg-8 col-md-12 col-sm-10 ml-auto mr-auto">
+            <div class="card card-login card-hidden form-pos">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Thank you for wishing us</h4>
               </div>
