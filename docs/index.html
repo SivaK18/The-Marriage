@@ -25,20 +25,24 @@
     }
     .Enigma {
       position: fixed;
-Width: 100%;
-bottom: 0;
+      Width: 100%;
+      bottom: 0;
     }
     .Enigma .container .copyright i{
         color: #FF0000 !important;
     }
     .TLeft {
-            width: 27vw;
             position: relative;
+            max-height: 75vh;
+            overflow: hidden;
     }
     .TRight {
-            width: 67vw;
-            max-height: 80%;
+            max-height: 75vh;
             position: relative;
+            overflow: scroll;;
+    }
+    .head {
+      min-height: 90vh !important;
     }
 </style>
   <meta charset="utf-8" />
@@ -92,15 +96,16 @@ bottom: 0;
             </div>
           </nav>
 
-  <div class="page-header " style="background-color: #fff;">
+  <div class="page-header head " style="background-color: #fff;">
     <div class="container" >
     <div class="row">
       
 
-        <div class=" TLeft ml-auto mr-auto">
-            <div class="card float-left">
+        <div class="col-lg-4 col-md-4 col-sm-4 ml-auto mr-auto">
+            <div class="card">
               <div class="card-body ">
                 <!-- <p class="card-description text-center"> Fill </p> -->
+                <p class="TLeft">
                 Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
 
 Production branch
@@ -108,16 +113,18 @@ Production branch
 Deploy previews
     Any pull request against your production branch / branch deploy branches
 Branch deploys
-    Deploy only the production branch
+    Deploy only the production branch.
+  </p>
               </div>
               <div class="card-footer justify-content-center">
               </div>
             </div>
         </div>
-          <div class="TRight overflow-auto ml-auto mr-auto">
-              <div class="card float-right overflow-auto">
-                <div class="card-body overflow-auto">
+          <div class=" overflow-auto ml-auto mr-auto col-lg-8 col-md-8 col-sm-8">
+              <div class="card">
+                <div class="card-body ">
                   <!-- <p class="card-description text-center"> Fill </p> -->
+                  <p class=" TRight ">
                   Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
 
                   Production branch
@@ -165,7 +172,7 @@ Production branch
 Deploy previews
     Any pull request against your production branch / branch deploy branches
 Branch deploys
-    Deploy only the production branch. 
+    Deploy only the production branch. </p>
                 </div>
                 <div class="card-footer justify-content-center">
                 </div>
