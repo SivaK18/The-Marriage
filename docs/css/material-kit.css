@@ -13480,9 +13480,9 @@ thead.thead-inverse th,
     margin-right: 5px; }
 
 .login-page .footer {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  background: transparent;
+  background: #9c27b0;
   bottom: 0;
   color: #fff;
   z-index: 1; }
@@ -15576,7 +15576,8 @@ select.selectpicker {
   height: auto;
   display: inherit; }
   .login-page .page-header .container {
-    padding-top: 23vh; }
+    padding-top: 10vh;
+    padding-bottom: 10vh; }
 
 .login-page .footer .container {
   padding: 0; }
