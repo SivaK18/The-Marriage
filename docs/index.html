@@ -24,7 +24,7 @@
         color: #1a1a1a !important;
     }
     .Enigma {
-      position: static !important;
+      position: fixed !important;
       Width: 100%;
       bottom: 0;
       height: 10vh !important;
@@ -35,18 +35,29 @@
         color: #FF0000 !important;
     }
     .TLeft {
+            max-height: 100vh;
             position: relative;
-            max-height: 75vh;
             overflow: hidden;
+            color: #1a1a1a !important;
+
+
     }
     .TRight {
-            max-height: 75vh;
+            max-height: 100vh;
             position: relative;
             overflow: scroll;
+            color: #1a1a1a !important;
+
     }
-    .head {
-      min-height: 90vh !important;
+    
+    .scheme:hover {
+      background-color: #1a1a1a !important;
+      color: #fff !important;
     }
+    .C1{
+      padding-top: 15vh !important;
+      padding-bottom: 0% !important;
+    } 
 </style>
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
@@ -63,126 +74,59 @@
 </head>
 
 <body class="login-page sidebar-collapse">
-    <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-primary   fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-            <div class="container">
-              <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html">the-wedding</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="navbar-toggler-icon"></span>
-                  <span class="navbar-toggler-icon"></span>
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                  <li class="active  nav-item">
-                    <a href="./index.html" class="nav-link">
-                      <i class="material-icons">explore</i>
-                      Our Story
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="live.html" class="nav-link">
-                      <i class="material-icons">live_tv</i>
-                      Watch Us Live
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="form.html" class="nav-link">
-                      <i class="material-icons">message</i>
-                      Wish Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-dark fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand " href="index.html"> &nbsp; #NK gets Janified &nbsp;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link scheme">
+              <i class="material-icons">explore</i>
+              Our Story
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./live.html" class="nav-link scheme">
+              <i class="material-icons">live_tv</i>
+              Watch Us Live
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="form.html" class="nav-link scheme">
+              <i class="material-icons">message</i>
+              Wish Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <div class="page-header head " style="background-color: #fff;">
-    <div class="container" >
+    <div class="container C1" >
     <div class="row">
       
 
         <div class="col-lg-4 col-md-4 col-sm-4 ml-auto mr-auto">
-            <div class="card">
-              <div class="card-body ">
                 <!-- <p class="card-description text-center"> Fill </p> -->
-                <p class="TLeft">
-                Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-Production branch
-    siva
-Deploy previews
-    Any pull request against your production branch / branch deploy branches
-Branch deploys
-    Deploy only the production branch.
-  </p>
-              </div>
-              <div class="card-footer justify-content-center">
-              </div>
-            </div>
+                <img class="TLeft" src="./img/index.jpeg" alt="Girl in a jacket" width="100%" height="100%">
+        </img>
         </div>
           <div class=" overflow-auto ml-auto mr-auto col-lg-8 col-md-8 col-sm-8">
-              <div class="card">
-                <div class="card-body ">
                   <!-- <p class="card-description text-center"> Fill </p> -->
-                  <p class=" TRight ">
-                  Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-                  Production branch
-                      siva
-                  Deploy previews
-                      Any pull request against your production branch / branch deploy branches
-                  Branch deploys
-                      Deploy only the production branch.
-                      Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-Production branch
-    siva
-Deploy previews
-    Any pull request against your production branch / branch deploy branches
-Branch deploys
-    Deploy only the production branch. 
-    Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-                  Production branch
-                      siva
-                  Deploy previews
-                      Any pull request against your production branch / branch deploy branches
-                  Branch deploys
-                      Deploy only the production branch.
-                      Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-Production branch
-    siva
-Deploy previews
-    Any pull request against your production branch / branch deploy branches
-Branch deploys
-    Deploy only the production branch. 
-    Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-                  Production branch
-                      siva
-                  Deploy previews
-                      Any pull request against your production branch / branch deploy branches
-                  Branch deploys
-                      Deploy only the production branch.
-                      Deploy contexts are a way to tell Netlify how to build your site. They give you the flexibility to configure your site’s builds depending on the context they are going to be deployed to.
-
-Production branch
-    siva
-Deploy previews
-    Any pull request against your production branch / branch deploy branches
-Branch deploys
-    Deploy only the production branch. </p>
-                </div>
-                <div class="card-footer justify-content-center">
-                </div>
-              </div>
+                  <p class=" TRight text-justify">
+                    Scrollable Div .. Contents and typography can be changed as per request
+                   </p>
           </div>
         </div>
-    </div>
     </div>
     <footer class="footer Enigma">
         <div class="container">
