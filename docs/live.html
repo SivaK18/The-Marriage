@@ -18,10 +18,18 @@
 <head>
 <style>
     .Enigma .container .copyright a{
-        color: #000000 !important;
+        color: #1a1a1a !important;
     }
     .Enigma .container .copyright {
-        color: #000000 !important;
+        color: #1a1a1a !important;
+    }
+    .Enigma {
+      position: fixed !important;
+      Width: 100%;
+      bottom: 0;
+      height: 10vh !important;
+      background : transparent !important;
+      background-color: transparent !important;
     }
     .Enigma .container .copyright i{
         color: #FF0000 !important;
@@ -50,7 +58,7 @@
 
   position:fixed;
   left:12%;
-  top:12%;
+  top:15%;
   width:75%;
   height:75%;
   right:auto;
@@ -64,6 +72,11 @@
   z-index: -1;
   width: 100%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
+
+  .scheme:hover {
+      background-color: #1a1a1a !important;
+      color: #fff !important;
+    }
 
   /* .btn-success {
       color: #fff !important;
@@ -93,44 +106,43 @@
 </head>
 
 <body class="login-page sidebar-collapse">
-    <canvas></canvas>
-    <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-primary   fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
-            <div class="container">
-              <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html">the-wedding</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="navbar-toggler-icon"></span>
-                  <span class="navbar-toggler-icon"></span>
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              </div>
-              <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a href="./index.html" class="nav-link">
-                      <i class="material-icons">explore</i>
-                      Our Story
-                    </a>
-                  </li>
-                  <li class="active  nav-item">
-                    <a href="./live.html" class="nav-link">
-                      <i class="material-icons">live_tv</i>
-                      Watch Us Live
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="form.html" class="nav-link">
-                      <i class="material-icons">message</i>
-                      Wish Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-dark fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand " href="index.html"> &nbsp; #NK gets Janified &nbsp;</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link scheme">
+              <i class="material-icons">explore</i>
+              Our Story
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./live.html" class="nav-link scheme">
+              <i class="material-icons">live_tv</i>
+              Watch Us Live
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="form.html" class="nav-link scheme">
+              <i class="material-icons">message</i>
+              Wish Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-  <div class="page-header " style="background-image: url('./img/liv.jpg');">
+  <div class="page-header " >
     <div class="container embedd" >
         
       <div class="row ">
@@ -191,6 +203,6 @@
 <script src="js/contactForm/contact.js"> </script> 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"> </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"> </script>
-<script  src="./js/live.js"></script>
+<!--<script  src="./js/live.js"></script> -->
 
 </html>

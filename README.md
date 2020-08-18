@@ -8,7 +8,7 @@ contactForm - the corresponding javascript to pass the wish form to excel.
 
 ### Things to be done 
 - [X] The Landing Site and Navbar
-- [x] The Embedded live stream 
+- [] The Embedded live stream 
 - [x] The wish form
 - [X] The site after submitting the form
 - [] Design Elements and content changes 
