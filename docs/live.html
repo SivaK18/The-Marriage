@@ -24,7 +24,7 @@
         color: #1a1a1a !important;
     }
     .Enigma {
-      position: fixed !important;
+      position: relative !important;
       Width: 100%;
       bottom: 0;
       height: 10vh !important;
@@ -49,33 +49,87 @@
 }
 
 .embed {
-  position:fixed;
+  
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
   border: none;
   /*border-top: 4px solid #ff0000;*/
 
   position:fixed;
-  left:0%;
-  top:10%;
-  width:100%;
-  height:100%;
-  right:auto;
+  /*
+  top: 5%;
+  bottom: 5%;
+  */
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
   box-sizing:border-box;
 
   background: #000000;
 }
-.canvas {
-  position: fixed;
-  overflow: hidden;
-  z-index: -1;
-  width: 100%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+.head{
+  min-height: 100%;
+  padding-top: 15vh;
+  width: 100%;
+  width: 100% !important;
+  height: 100vh !important;
 }
-
   .scheme:hover {
       background-color: #1a1a1a !important;
       color: #fff !important;
+    }
+  .C2{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    width: 100% !important;
+    height: 75vh !important;
+    max-width: 100% !important;
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .C1{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    width: 100% !important;
+  }
+  body{
+    min-height: 100vh !important;
+  }
+  .lft-img{
+    position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-left: 2.5vh;
+  max-height: 100%;
+  padding-right: 2.5vh ;
+  } 
+  .rght-img
+  {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  padding-left: 2.5vh;
+  max-height: 100%;
+  padding-right: 2.5vh ;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+  .TRight {
+            max-height: 100vh;
+            position: relative;
+            overflow: scroll;
+            color: #1a1a1a !important;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 4vh;
+            
+
     }
 
   /* .btn-success {
@@ -105,7 +159,7 @@
   <!-- <link rel="stylesheet" href="./css/live.css" /> -->
 </head>
 
-<body class="login-page sidebar-collapse">
+<body class="login-page sidebar-collapse ">
   <nav class="navbar navbar-color-on-scroll navbar-expand-lg bg-dark fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
       <div class="navbar-translate">
@@ -141,26 +195,36 @@
       </div>
     </div>
   </nav>
-
-  <div class="page-header " >
-    <div class="container embedd" >
+</body>
+  <body class=" head">
+    <div class="head">
+    <div class="container C2" >
         
-      <div class="row ">
-        <div class=" lg-3 md-4 sm-6 ml-auto mr-auto">
-          <img class="rounded-circle img-fluid" src="./img/live_l.jpeg" alt="men"></img> 
-        </div>
-            <div class=" ml-auto mr-auto">
+      <div class="row C2">
+        <div class=" col-lg-2 col-md-2 col-sm-2 float-left">
+          <img class="rounded img-fluid lft-img" src="./img/live_l.jpeg" alt="men" width="100%" height="100%"></img> 
+        </div> 
+            <div class="col-lg-8 col-md-8 col-sm-8 ml-auto mr-auto">
             <iframe  
                 src="https://www.youtube.com/embed/nA9UZF-SZoQ" 
                 scrolling="no"
-                class = "embed"
+                class = "embed ml-auto mr-auto rounded"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
               </iframe>
             </div>
-            <div class=" lg-3 md-4 sm-6 ml-auto mr-auto">
-              <img class="rounded-circle img-fluid" src="./img/live_r.jpeg" alt="women"></img> 
-            </div>
+            <div class=" col-lg-2 col-md-2 col-sm-2 float-right">
+              <img class="rounded img-fluid rght-img" src="./img/live_r.jpeg" width="100%" height="100%" alt="women"></img> 
+            </div> 
+        </div>
+        <div class = "row C1">
+          <div class=" overflow-auto ml-auto mr-auto col-lg-6 col-md-6 col-sm-6">
+            <!-- <p class="card-description text-center"> Fill </p> -->
+            <p class=" TRight text-justify ml-auto mr-auto">
+              Scrollable Div .. Contents and typography can be changed as per request
+             </p>
+        </div>
+        
         </div>
       </div>
   </div>
