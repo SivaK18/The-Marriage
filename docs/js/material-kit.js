@@ -300,6 +300,8 @@ $(document).ready(function() {
 
   if (window_width >= 768) {
     big_image = $('.page-header[data-parallax="true"]');
+    console.log("big image val");
+    console.log(big_image);
     if (big_image.length != 0) {
       $(window).on('scroll', materialKit.checkScrollForParallax);
     }
