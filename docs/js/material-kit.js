@@ -28,12 +28,15 @@ materialKit = {
 
   checkScrollForParallax: function() {
     oVal = ($(window).scrollTop() / 3);
+    var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if(!ismobile){
     big_image.css({
       'transform': 'translate3d(0,' + oVal + 'px,0)',
       '-webkit-transform': 'translate3d(0,' + oVal + 'px,0)',
       '-ms-transform': 'translate3d(0,' + oVal + 'px,0)',
       '-o-transform': 'translate3d(0,' + oVal + 'px,0)'
     });
+  }
   },
 
   initFormExtendedDatetimepickers: function() {
@@ -300,6 +303,8 @@ $(document).ready(function() {
 
   if (window_width >= 768) {
     big_image = $('.page-header[data-parallax="true"]');
+    console.log("big image val");
+    console.log(big_image);
     if (big_image.length != 0) {
       $(window).on('scroll', materialKit.checkScrollForParallax);
     }

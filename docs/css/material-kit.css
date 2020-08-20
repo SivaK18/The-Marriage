@@ -13480,7 +13480,7 @@ thead.thead-inverse th,
     margin-right: 5px; }
 
 .login-page .footer {
-  position: fixed;
+  position: static;
   width: 100%;
   background: #9c27b0;
   bottom: 0;
