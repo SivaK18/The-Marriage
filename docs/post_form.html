@@ -41,10 +41,6 @@
       min-height: 90vh !important;
     }
     
-    .scheme:hover {
-      background-color: #1a1a1a !important;
-      color: #fff !important;
-    }
     .C1{
       margin-top: auto !important;
       margin-bottom: auto !important;
@@ -57,10 +53,18 @@
     .b1{
       font-size: 1.25em;
       font-weight: 600;
+      font-family: Poppins ;
+    }
+    .para {
+      font-size: 1.2em;
+      font-family: Poppins ;
     }
     .page-header{
       background-position : 66% center !important;
     }
+    .invitation {
+  font-family: Invite !important;
+  }
   /* .btn-success {
       color: #fff !important;
       background-color: #47a44b !important;
@@ -83,6 +87,8 @@
   <!-- CSS Files -->
   <link href="./css/material-kit.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="icons/flaticon.css">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link href="./fonts/invite.css"  rel="stylesheet"  />
 </head>
 
 <body class="login-page sidebar-collapse">
@@ -101,19 +107,19 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a href="./index.html" class="nav-link scheme">
-              <span class="flaticon-heart"></i>Our Story</span>
+              <span class="flaticon-heart para"> &nbsp; Our Story</span>
               
             </a>
           </li>
           <li class="nav-item">
             <a href="./live.html" class="nav-link scheme">
-              <span class="flaticon-youtube"> Watch Us Live</span>
+              <span class="flaticon-youtube para">&nbsp; Watch Us Live</span>
              
             </a>
           </li>
           <li class="nav-item">
             <a href="form.html" class="nav-link scheme">
-              <span class="flaticon-script">Wish Us</span>
+              <span class="flaticon-script para">&nbsp; Wish Us</span>
               
             </a>
           </li>
@@ -132,7 +138,7 @@
         <div class="col-lg-8 col-md-12 col-sm-10 ml-auto mr-auto">
             <div class="card card-login card-hidden">
               <div class="card-header card-header-rose text-center">
-                <h4 class="card-title">Thank you for wishing us</h4>
+                <h4 class="card-title invitation">Thank you for wishing us</h4>
               </div>
               <div class="card-body ml-auto mr-auto pad">
               
@@ -140,7 +146,7 @@
               <div class="row mr-auto ml-auto">
                 <!-- <p class="card-description text-center"> Fill </p> -->
                     <a href="form.html">
-                    <button class="btn btn-success btn-sm float-left "  > 
+                    <button class="btn btn-success btn-sm float-left para"  > 
                        Wish Us Again 
                        <div class= "ripple-container"> </div> 
                     </button>
@@ -150,7 +156,7 @@
                  <!-- <div class="col-md-6 col-lg-4 col-sm-8 ml-auto mr-auto "> -->
                   <!--<div class="float-right"> -->
                    <a href="index.html">
-                    <button class="btn btn-primary btn-sm float-right "  > 
+                    <button class="btn btn-primary btn-sm float-right para"  > 
                       Watch Our Story 
                       <div class= "ripple-container"> </div>
                     </button>
