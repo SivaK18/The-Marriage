@@ -24,7 +24,7 @@
         color: #1a1a1a !important;
     }
     .Enigma {
-      position: fixed !important;
+      position: static !important;
       Width: 100%;
       bottom: 0;
       height: 10vh !important;
@@ -36,9 +36,6 @@
     }
     .pad {
       padding: 0% !important;
-    }
-    .form-pos{
-    margin-top: 23vh !important;
     }
     .head {
       min-height: 90vh !important;
@@ -52,7 +49,11 @@
       margin-top: auto !important;
       margin-bottom: auto !important;
       padding-bottom: 0% !important;
-    } 
+    }
+    .C2{
+      padding-top: 3vh !important;
+      padding-bottom: 0% !important;
+    }  
     .b1{
       font-size: 1.25em;
       font-weight: 600;
@@ -79,6 +80,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./css/material-kit.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="icons/flaticon.css">
 </head>
 
 <body class="login-page sidebar-collapse">
@@ -117,11 +119,16 @@
       </div>
     </div>
   </nav>
-  <div class="page-header head">
-    <div class="container C1" >
+    <div class="page-header head" data-parallax="true" style="background-image: url('./img/uncropped.jpg');">
+      <div class="container C1" > 
+       <!--<img src="./img/form.jpeg" alt="Girl in a jacket" width="100%" height="100%" /> -->
+      </div>
+    </div>
+    <div class = "main main-raised">
+    <div class="container C2" >
       <div class="row">
         <div class="col-lg-8 col-md-12 col-sm-10 ml-auto mr-auto">
-            <div class="card card-login card-hidden form-pos">
+            <div class="card card-login card-hidden">
               <div class="card-header card-header-primary text-center">
                 <h4 class="card-title">Thank you for wishing us</h4>
               </div>
@@ -160,6 +167,7 @@
         </div>
       </div>
   </div>
+</div>
     <footer class="footer Enigma">
         <div class="container">
           <div class="copyright">
