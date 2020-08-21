@@ -17,6 +17,9 @@
 
 <head>
 <style>
+  .invitation {
+  font-family: Invite !important;
+  }
     .Enigma .container .copyright a{
         color: #1a1a1a !important;
     }
@@ -47,10 +50,6 @@
   width: 100%; 
   padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-.embed-container{
-  margin-top: 1.5vh;
-  margin-bottom: 1.5vh;
-}
 
 .embed {
   
@@ -65,12 +64,12 @@
   bottom: 5%;
   */
   position: absolute !important;
-  top: 50%;
+  top: 65%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   
   box-sizing:border-box;
 
@@ -88,7 +87,7 @@
   .C2{
     height: 75vh !important;
   }
-  .lft-img{
+  /* .lft-img{
     position: absolute !important;
   top: 50%;
   left: 50%;
@@ -107,7 +106,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: auto;
-  }
+  }*/
   .TRight {
             max-height: 100vh;
             position: relative;
@@ -126,7 +125,9 @@
     .page-header{
       background-position : 12% center !important;
     }
-
+    .title{
+      margin : 1vh !important;
+    }
   /* .btn-success {
       color: #fff !important;
       background-color: #47a44b !important;
@@ -138,10 +139,9 @@
 
 </style>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="icon" type="image/png" href="./icons/title-icons/youtube.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title> Wish Us
+  <title> Watch Us Live
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -150,6 +150,7 @@
   <!-- CSS Files -->
   <link href="./css/material-kit.min.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="icons/flaticon.css">
+  <link href="./fonts/invite.css"  rel="stylesheet"  />
   <!-- <link rel="stylesheet" href="./css/live.css" /> -->
 </head>
 
@@ -198,10 +199,12 @@
     <div class="container C2" >
         
       <div class="row C2">
-        <div class=" col-lg-2 col-md-2 col-sm-2 float-left">
+        
+        <!-- <div class=" col-lg-2 col-md-2 col-sm-2 float-left">
           <img class="rounded-circle img-fluid lft-img" src="./img/live_l.jpeg" alt="men" width="100%" height="100%"></img> 
-        </div> 
-            <div class="col-lg-8 col-md-8 col-sm-8 ml-auto mr-auto embed-container">
+        </div> -->
+            <div class="col-lg-12 col-md-12 col-sm-12 ml-auto mr-auto embed-container">
+              <h1 class="title text-center invitation">Witness the Ceremony</h1>
             <iframe  
                 src="https://www.youtube.com/embed/lbwB_q-tLko" 
                 scrolling="no"
@@ -210,19 +213,19 @@
                 allowfullscreen>
               </iframe>
             </div>
-            <div class=" col-lg-2 col-md-2 col-sm-2 float-right">
+            <!--<div class=" col-lg-2 col-md-2 col-sm-2 float-right">
               <img class="rounded-circle img-fluid rght-img" src="./img/live_r.jpeg" width="100%" height="100%" alt="women"></img> 
-            </div> 
+            </div> -->
         </div>
-        <div class = "row C1">
-          <div class=" overflow-auto ml-auto mr-auto col-lg-6 col-md-6 col-sm-6">
-            <!-- <p class="card-description text-center"> Fill </p> -->
-            <p class=" TRight text-justify ml-auto mr-auto">
+        <!--<div class = "row C1">
+          <div class=" overflow-auto ml-auto mr-auto col-lg-10 col-md-10 col-sm-10">
+            
+            <p class=" TRight text-center ml-auto mr-auto">
               Scrollable Div .. Contents and typography can be changed as per request
              </p>
         </div>
         
-        </div>
+        </div> -->
       </div>
   </div>
     <footer class="footer Enigma">
