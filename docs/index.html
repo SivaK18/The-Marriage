@@ -17,6 +17,10 @@
 
 <head>
 <style>
+  .invitation {
+  font-family: Invite !important;
+  }
+
     .Enigma .container .copyright a{
         color: #1a1a1a !important;
     }
@@ -34,55 +38,65 @@
     .Enigma .container .copyright i{
         color: #FF0000 !important;
     }
-    .TLeft {
-            max-height: 100vh;
-            position: relative;
-            overflow: hidden;
-            color: #1a1a1a !important;
-            margin-top: auto;
-            margin-bottom: auto;
-            padding-top: 4vh;
-
-
-    }
     .TRight {
             max-height: 100vh;
             position: relative;
-            overflow: scroll;
             color: #1a1a1a !important;
             margin-top: auto;
-            margin-bottom: auto;
-            padding-top: 4vh;
+            width: 100%;
+            padding: 1.2vh;
 
     }
     
     .scheme:hover {
-      background-color: #1a1a1a !important;
-      color: #fff !important;
-    }
+      background-color: rgb(0, 0, 0, 0.35)!important;
+      color: rgb(255, 255, 255) !important;
+    } 
     .C1{
       padding-top: 15vh !important;
       padding-bottom: 0% !important;
     } 
+    .C2{
+      padding-top: 0.5vh !important;
+      padding-bottom: 5vh !important;
+    } 
+    .b1{
+      font-size: 1.25em;
+      font-weight: 600;
+      font-family: Poppins ;
+    }
+    .para {
+      font-size: 1.2em;
+      font-family: Poppins ;
+      line-height: 1.6em;
+    }
+    .title{
+      margin-bottom : 0vh !important;
+      margin-top: 3vh !important;
+    }
+    
 </style>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="icon" type="image/png" href="./icons/title-icons/bride.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title> Wish Us
+  <title> NK gets Janified
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="icons/flaticon.css"> 
   <!-- CSS Files -->
-  <link href="./css/material-kit.min.css?v=2.2.0" rel="stylesheet" />
+  <link href="./css/material-kit.min.css" rel="stylesheet" />
+  <link href="./fonts/invite.css"  rel="stylesheet"  />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 
 <body class="login-page sidebar-collapse">
-  <nav class="navbar  navbar-expand-lg bg-dark fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar  navbar-expand-lg navbar-transparent bg-dark fixed-top navbar-expand-lg " id="sectionsNav">
     <div class="container">
-      <div class="navbar-translate">
-        <a class="navbar-brand " href="index.html"> &nbsp; #NK gets Janified &nbsp;</a>
+      <div class="navbar-translate ">
+        <span class="flaticon-ring"><a class="navbar-brand b1" href="index.html">  &nbsp; NK gets Janified &nbsp; </a></span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -94,20 +108,20 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a href="./index.html" class="nav-link scheme">
-              <i class="material-icons">explore</i>
-              Our Story
+              <span class="flaticon-heart para"> &nbsp; Our Story</span>
+              
             </a>
           </li>
           <li class="nav-item">
             <a href="./live.html" class="nav-link scheme">
-              <i class="material-icons">live_tv</i>
-              Watch Us Live
+              <span class="flaticon-youtube para">&nbsp; Watch Us Live</span>
+             
             </a>
           </li>
           <li class="nav-item">
             <a href="form.html" class="nav-link scheme">
-              <i class="material-icons">message</i>
-              Wish Us
+              <span class="flaticon-script para">&nbsp; Wish Us</span>
+              
             </a>
           </li>
         </ul>
@@ -115,35 +129,58 @@
     </div>
   </nav>
 
-  <div class="page-header head " style="background-color: #fff;">
-    <div class="container C1" >
+  <div class="page-header head " data-parallax="true" style="background-image: url('./img/index-bg.jpeg');">
+    <div class="container C1" > 
+     </div>
+  </div>
+  <div class = "main main-raised">
+    <div class="container C2" >
     <div class="row">
       
 
-        <div class="col-lg-4 col-md-4 col-sm-4 ml-auto mr-auto">
-                <!-- <p class="card-description text-center"> Fill </p> -->
+       <!-- <div class="col-lg-4 col-md-4 col-sm-4 ml-auto mr-auto">
+               <p class="card-description text-center"> Fill </p> 
                 <img class="TLeft" src="./img/index.jpg" alt="Girl in a jacket" width="100%" height="100%">
         </img>
-        </div>
-          <div class=" overflow-auto ml-auto mr-auto col-lg-8 col-md-8 col-sm-8">
+        </div>  -->
+          <div class=" overflow-auto ml-auto mr-auto col-lg-12 col-md-10 col-sm-8">
                   <!-- <p class="card-description text-center"> Fill </p> -->
-                  <p class=" TRight text-justify">
-                    Scrollable Div .. Contents and typography can be changed as per request
+                  <h1 class="title text-center invitation">Our Story</h1>
+                  <p class=" TRight para text-justify">
+                    Janu is full of love and life! She can smile and spread smiles effortlessly. She believes in being kind no matter what!
+                    
+
+                    Nilesh is a happy-go-lucky guy who loves to keep everyone happy! He is undoubtedly the Prince Charming of both our families!
+                    
+
+                    Nilesh and Janu met and that’s when NK got Janified! They are falling more in love with each other with every passing day!
                    </p>
           </div>
         </div>
     </div>
-  
+  </div>
     <footer class="footer Enigma">
         <div class="container">
           <div class="copyright">
-            &copy;
-             made with <i class="material-icons">favorite</i> by
+            &copy; 
+            2020 made with <i class="material-icons">favorite</i> by
             <a href="https://teamenigma.netlify.app/" target="_blank">Team Enigma</a>.
           </div>
          </div>
       </footer> 
-    </div>
-
+  <!--   Core JS Files   -->
+  <script src="./js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <!-- <script src="./js/plugins/moment.min.js"></script> -->
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <!--<script src="./js/plugins/nouislider.min.js" type="text/javascript"></script> --->
+  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+  <!-- <script src="./js/plugins/bootstrap-tagsinput.js"></script> -->
+  <!-- Plugins for presentation and navigation  -->
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <!--<script async defer src="https://buttons.github.io/buttons.js"></script> -->
+  <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+  <script src="./js/code.min.js" type="text/javascript"></script>
 </body>
 </html>
