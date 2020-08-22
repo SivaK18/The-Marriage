@@ -1,10 +1,11 @@
 @font-face {
     font-family: Invite;
-    src: url(Aerotis.ttf);
+    src: url(ChopinScript.otf);
     font-weight: 100;
 }
 
 @font-face {
   font-family: Aerotis;
-  src: url(ChopinScript.otf);
+  src: url(Aerotis.ttf);
 }
+
