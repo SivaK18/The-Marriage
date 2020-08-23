@@ -25,11 +25,31 @@
     font-family: Invite !important;
     font-size: 2em;
     }
+    
+  
   }
-  @media (max-width: 400px) {
-    .embed{
-      top: 45% !important;
+  
+  @media (min-width: 1500px) {
+    
+    .head{
+      height: 140vh !important;
     }
+    .embed{
+      top: 65% !important;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .embed{
+      top: 32% !important;
+    }
+    .head{
+      height: 67vh !important ;
+    }
+    .C2{
+      height: 42vh !important ;
+    }
+
   }
     .Enigma .container .copyright a{
         color: #1a1a1a !important;
@@ -55,11 +75,11 @@
       padding: 0% !important;
     }
     
-.embedd {
+.embed-container {
   position: relative;
-  overflow: hidden;
   width: 100%; 
-  padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-bottom: 56.25%;   /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) 
+  padding: 0% !important; */
 }
 
 .embed {
@@ -69,18 +89,18 @@
   border: none;
   /*border-top: 4px solid #ff0000;*/
 
-  position:fixed;
+  position: relative;
   /*
   top: 5%;
   bottom: 5%;
   */
   position: absolute !important;
   top: 53%;
-  left: 50%;
+  left: 50%; 
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 95%;
-  height: 95%;
+  width: 87vw ;
+  height: 48.935vw;
   
   box-sizing:border-box;
 
@@ -89,14 +109,14 @@
 .head{
   min-height: 100%;
   padding-top: 3vh;
-  height: 100vh !important;
+  height: 100vh;
 }
 .C1{
       padding-top: 15vh !important;
       padding-bottom: 0% !important;
     } 
   .C2{
-    height: 65vh !important;
+    height: 65vh ;
   }
   /* .lft-img{
     position: absolute !important;
@@ -224,14 +244,14 @@
     <div class="head main main-raised">
     <div class="container C2" >
 
-      <div class="overflow-auto ml-auto mr-auto col-lg-12 col-md-10 col-sm-8" style="display: inline-block">
+      <div class="overflow-auto ml-auto mr-auto col-lg-12 col-md-12 col-sm-12" style="display: inline-block">
           <h1 class="title text-center invitation">Let’s&nbsp; celebrate&nbsp;&nbsp; together </h1>
           <p class=" TRight para text-justifyr">
             Welcome to our forever! We feel loved as you have already made your virtual presence! Let’s celebrate together on August 24,2020 from 8:45 AM onwards!!
           </p>
         </div>
         
-      <div class="row C2" style="padding-top: 1em;">
+      <div class="row C2" >
         
         <!-- <div class=" col-lg-2 col-md-2 col-sm-2 float-left">
           <img class="rounded-circle img-fluid lft-img" src="./img/live_l.jpeg" alt="men" width="100%" height="100%"></img> 
@@ -241,7 +261,7 @@
 
             <div class="col-lg-12 col-md-12 col-sm-12 ml-auto mr-auto embed-container">
             <iframe  
-                src="https://www.youtube.com/embed/lbwB_q-tLko" 
+                src="http://www.livewebcast.in/vjnetlive/live/" 
                 scrolling="no"
                 class = "embed ml-auto mr-auto rounded"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
